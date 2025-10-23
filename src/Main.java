@@ -10,8 +10,8 @@ public class Main {
         Director director2 = new Director("Анна", "Сидорова", Gender.FEMALE, 15);
 
         // Создаем автора музыки и хореографа
-        String composer = "Петр Ильич Чайковский";
-        String choreographer = "Надежда Бородина";
+        Person musicAuthor = new Person("Петр", "Чайковский", Gender.MALE);
+        Person choreographer = new Person("Надежда", "Бородина", Gender.FEMALE);
 
         // Создаем спектакли
         // Обычный спектакль
@@ -26,7 +26,7 @@ public class Main {
                 "Евгений Онегин",
                 180,
                 director2,
-                composer,
+                musicAuthor,
                 "Либретто оперы Евгений Онегин",
                 40 // размер хора
         );
@@ -36,7 +36,7 @@ public class Main {
                 "Лебединое озеро",
                 120,
                 director1,
-                composer,
+                musicAuthor,
                 "Либретто балета Лебединое озеро",
                 choreographer
         );
@@ -90,4 +90,3 @@ public class Main {
         show.printDirectorInfo();
         opera.printDirectorInfo();
     }
-}
